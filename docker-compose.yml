@@ -32,7 +32,7 @@ services:
 
   postgres_db:
     container_name: postgres_db
-    image: josecolins1oo/awsproyecto1:frontend
+    image: josecolins1oo/awsproyecto1:bd
     ports:
       - 5432:5432
     environment:
