@@ -3,7 +3,7 @@ version: "3.9"
 services:
   java_app:
     container_name: java_app_backend
-    image: josecolins1oo/crudsalon1:backend
+    image: josecolins1oo/awsproyecto1:backend
     build: ./back-CrudSalon
     ports:
       - 8585:8585
@@ -21,7 +21,7 @@ services:
 
   angular_app:
     container_name: angular_app_frontend
-    image: josecolins1oo/crudsalon1:frontend
+    image: josecolins1oo/awsproyecto1:frontend
     build: ./front-CrudSalon
     ports:
       - 4201:4200
@@ -32,7 +32,7 @@ services:
 
   postgres_db:
     container_name: postgres_db
-    image: josecolins1oo/crudsalon1:bd
+    image: josecolins1oo/awsproyecto1:frontend
     ports:
       - 5432:5432
     environment:
